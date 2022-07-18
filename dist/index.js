@@ -8,7 +8,5 @@ const discord_1 = require("./modules/discord");
 if (fs_1.default.existsSync('./map.json')) {
     discord_1.listen();
 }
-else {
-    discord_1.getChannels().then((channels) => discord_1.createServer(channels)).then(() => discord_1.listen());
-}
+
 //# sourceMappingURL=index.js.map
